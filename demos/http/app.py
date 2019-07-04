@@ -16,7 +16,7 @@ from jinja2.utils import generate_lorem_ipsum
 from flask import Flask, make_response, request, redirect, url_for, abort, session, jsonify
 
 app = Flask(__name__)
-app.secret_key = os.getenv('SECRET_KEY', 'secret string')
+app.secret_key = os.getenv('SECRET_KEY', 'secret string!')
 
 
 # get name value from query string and cookie
